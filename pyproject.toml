@@ -1,13 +1,19 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "simulacion_montecarlo"
+name = "simulacion"
 version = "0.1.0"
-description = "Librería para simulación estadística y muestreo avanzado"
+description = "Librería para simulación estadística"
+authors = [
+    {name = "Santiago Cardenas", email = "santiago.cardenas521@pascualbravo.edu.co"}
+]
 dependencies = [
     "numpy",
     "scipy",
     "matplotlib"
-] 
+]
+
+[tool.setuptools]
+packages = ["simulacion"]
